@@ -8,6 +8,7 @@ import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.*
 import kotlinx.android.synthetic.main.activity_edit_profile.*
 
+
 class EditProfileActivity : MainActivity(), PasswordDialog.Listener {
     private lateinit var mUser: User
     private lateinit var mPendingUser: User

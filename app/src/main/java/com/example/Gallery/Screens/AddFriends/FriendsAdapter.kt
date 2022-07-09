@@ -1,4 +1,4 @@
-package com.example.Gallery.Screens.AddUsers
+package com.example.Gallery.Screens.AddFriends
 
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +11,7 @@ import com.example.Gallery.Screens.Common.SimpleCallback
 import com.example.Gallery.Screens.Common.loadUserPhoto
 import kotlinx.android.synthetic.main.add_users_item.view.*
 
-class UsersAdapter(private val listener: Listener) : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
+class FriendsAdapter(private val listener: Listener) : RecyclerView.Adapter<FriendsAdapter.ViewHolder>() {
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 

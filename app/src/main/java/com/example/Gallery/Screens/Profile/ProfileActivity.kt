@@ -6,13 +6,12 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.Gallery.R
-import com.example.Gallery.Screens.AddUsers.AddUsersActivity
-import com.example.Gallery.Screens.Common.ImagesAdapter
-import com.example.Gallery.Screens.Common.MainActivity
-import com.example.Gallery.Screens.Common.loadUserPhoto
+import com.example.Gallery.Screens.AddFriends.AddFriendsActivity
+import com.example.Gallery.Screens.Common.*
 import com.example.Gallery.Screens.EditProfile.EditProfileActivity
 import com.example.Gallery.Screens.ProfileSettings.ProfileSettingsActivity
 import kotlinx.android.synthetic.main.activity_profile.*
+
 
 class ProfileActivity : MainActivity() {
     private lateinit var mAdapter: ImagesAdapter
@@ -30,8 +29,8 @@ class ProfileActivity : MainActivity() {
             val intent = Intent(this, ProfileSettingsActivity::class.java)
             startActivity(intent)
         }
-        add_users_image.setOnClickListener {
-            val intent = Intent(this, AddUsersActivity::class.java)
+        add_friends_image.setOnClickListener {
+            val intent = Intent(this, AddFriendsActivity::class.java)
             startActivity(intent)
         }
         images_recycler.layoutManager = GridLayoutManager(this, 3)

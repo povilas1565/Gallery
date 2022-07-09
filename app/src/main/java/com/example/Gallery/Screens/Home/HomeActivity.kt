@@ -7,7 +7,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Comments.CommentsActivity
 import com.example.Gallery.Screens.Common.MainActivity
+import com.example.Gallery.Screens.Common.setupAuthGuard
+import com.example.Gallery.Screens.Common.setupBottomNavigation
 import kotlinx.android.synthetic.main.activity_home.*
+
 
 class HomeActivity: MainActivity(), FeedAdapter.Listener {
     private lateinit var mAdapter: FeedAdapter

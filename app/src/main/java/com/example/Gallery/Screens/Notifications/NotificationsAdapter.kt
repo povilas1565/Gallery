@@ -9,6 +9,10 @@ import com.example.Gallery.Models.Notification
 import com.example.Gallery.Models.NotificationType
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.SimpleCallback
+import com.example.Gallery.Screens.Common.loadImageOrHide
+import com.example.Gallery.Screens.Common.loadUserPhoto
+import com.example.Gallery.Screens.Common.setCaptionText
+import kotlinx.android.synthetic.main.notification_item.view.*
 
 class NotificationsAdapter :  RecyclerView.Adapter<NotificationsAdapter.ViewHolder>() {
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)

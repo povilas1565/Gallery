@@ -3,7 +3,9 @@ package com.example.Gallery.Screens.ProfileSettings
 import android.os.Bundle
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.MainActivity
+import com.example.Gallery.Screens.Common.setupAuthGuard
 import kotlinx.android.synthetic.main.activity_profile_settings.*
+
 
 class ProfileSettingsActivity : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,11 +1,12 @@
 package com.example.Gallery.Screens.Register
 
-import android.app.Fragment
+
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.coordinateBtnAndInputs
 import kotlinx.android.synthetic.main.fragment_register_email.*

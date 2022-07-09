@@ -5,10 +5,11 @@ import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import com.example.Gallery.Screens.GalleryApp
 import com.example.Gallery.Screens.Login.LoginActivity
 
-class MainActivity : AppCompatActivity() {
+abstract class MainActivity : AppCompatActivity() {
     lateinit var commonViewModel: CommonViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
-
     inline fun <reified T : MainViewModel> initViewModel(): T =
         ViewModelProviders.of(this, ViewModelFactory(
             application as GalleryApp,
@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val TAG = "MainActivity"
+        const val TAG = "BaseActivity"
     }
 }

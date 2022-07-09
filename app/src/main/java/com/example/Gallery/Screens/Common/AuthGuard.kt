@@ -6,6 +6,7 @@ import androidx.lifecycle.OnLifecycleEvent
 import com.example.Gallery.Data.firebase.common.auth
 import com.google.firebase.auth.FirebaseAuth
 
+
 class AuthGuard(private val activity: MainActivity, f: (String) -> Unit) : LifecycleObserver {
 
     init {
@@ -35,6 +36,6 @@ class AuthGuard(private val activity: MainActivity, f: (String) -> Unit) : Lifec
     }
 }
 
-fun MainActivity.setupAuthGuard(f: (String) -> Unit) {
+  fun MainActivity.setupAuthGuard(f: (String) -> Unit) {
     AuthGuard(this, f)
 }

@@ -2,10 +2,12 @@ package com.example.Gallery.Screens.Common
 
 import android.content.Intent
 import android.util.Log
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.view.get
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.Observer
@@ -20,11 +22,12 @@ import com.example.Gallery.Screens.Profile.ProfileActivity
 import com.example.Gallery.Screens.Search.SearchActivity
 import com.example.Gallery.Screens.Share.ShareActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.firebase.database.core.view.View
 import com.nhaarman.supertooltips.ToolTip
 import com.nhaarman.supertooltips.ToolTipRelativeLayout
 import com.nhaarman.supertooltips.ToolTipView
 import kotlinx.android.synthetic.main.bottom_navigation_view.*
+import kotlinx.android.synthetic.main.notifications_tooltip_content.view.*
+
 
 class GalleryBottomNavigation(
     private val uid: String,

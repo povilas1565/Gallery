@@ -10,7 +10,10 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.ImagesAdapter
 import com.example.Gallery.Screens.Common.MainActivity
+import com.example.Gallery.Screens.Common.setupAuthGuard
+import com.example.Gallery.Screens.Common.setupBottomNavigation
 import kotlinx.android.synthetic.main.activity_search.*
+
 
 class SearchActivity : MainActivity(), TextWatcher {
 private lateinit var mAdapter: ImagesAdapter

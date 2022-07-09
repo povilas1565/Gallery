@@ -4,13 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.Observer
+import com.example.Gallery.Data.firebase.common.FirebaseHelper
 import com.example.Gallery.Models.User
 import com.example.Gallery.R
-import com.example.Gallery.Data.firebase.common.FirebaseHelper
 import com.example.Gallery.Screens.Common.CameraHelper
 import com.example.Gallery.Screens.Common.MainActivity
 import com.example.Gallery.Screens.Common.loadImage
+import com.example.Gallery.Screens.Common.setupAuthGuard
 import kotlinx.android.synthetic.main.activity_share.*
+
 
 class ShareActivity : MainActivity() {
     private lateinit var mCamera: CameraHelper

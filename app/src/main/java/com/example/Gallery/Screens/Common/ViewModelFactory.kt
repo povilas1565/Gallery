@@ -2,7 +2,7 @@ package com.example.Gallery.Screens.Common
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.Gallery.Screens.AddUsers.AddUsersViewModel
+import com.example.Gallery.Screens.AddFriends.AddUsersViewModel
 import com.example.Gallery.Screens.Comments.CommentsViewModel
 import com.example.Gallery.Screens.EditProfile.EditProfileViewModel
 import com.example.Gallery.Screens.Register.RegisterViewModel

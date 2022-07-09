@@ -7,6 +7,7 @@ import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.MainActivity
 import com.example.Gallery.Screens.Home.HomeActivity
 
+
 class RegisterActivity : MainActivity(), EmailFragment.Listener, NamePassFragment.Listener {
     private lateinit var mViewModel: RegisterViewModel
 
@@ -50,3 +51,6 @@ class RegisterActivity : MainActivity(), EmailFragment.Listener, NamePassFragmen
         const val TAG = "RegisterActivity"
     }
 }
+
+
+

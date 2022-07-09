@@ -1,4 +1,4 @@
-package com.example.Gallery.Screens.AddUsers
+package com.example.Gallery.Screens.AddFriends
 
 import androidx.lifecycle.LiveData
 import com.example.Gallery.Models.User
@@ -10,7 +10,7 @@ import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.Task
 import com.google.android.gms.tasks.Tasks
 
-class AddUsersViewModel(onFailureListener: OnFailureListener,
+class AddFriendsViewModel(onFailureListener: OnFailureListener,
                         private val usersRepo: UsersRepository,
                         private val feedPostsRepo: FeedPostsRepository) : MainViewModel(onFailureListener) {
     val userAndFriends: LiveData<Pair<User, List<User>>> =

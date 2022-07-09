@@ -31,7 +31,7 @@
                 android:name=".Screens.Register.RegisterActivity"
                 android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity android:name=".Screens.ProfileSettings.ProfileSettingsActivity" />
-        <activity android:name=".Screens.AddUsers.AddUsersActivity" />
+        <activity android:name=".Screens.AddFriends.AddUsersActivity" />
         <activity android:name=".Screens.Comments.CommentsActivity" />
         <provider
                 android:name="androidx.core.content.FileProvider"
