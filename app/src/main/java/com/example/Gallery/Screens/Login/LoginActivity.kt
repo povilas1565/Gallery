@@ -16,7 +16,7 @@ import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEventListener
 
 
-class LoginActivity: MainActivity(), KeyboardVisibilityEventListener, View.OnClickListener {
+class LoginActivity : MainActivity(), KeyboardVisibilityEventListener, View.OnClickListener {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var mViewModel: LoginViewModel
 

@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.Gallery.Screens.GalleryApp
 import com.example.Gallery.Screens.Login.LoginActivity
 
+@Suppress("DEPRECATION")
 abstract class MainActivity : AppCompatActivity() {
     lateinit var commonViewModel: CommonViewModel
 
@@ -23,10 +24,7 @@ abstract class MainActivity : AppCompatActivity() {
         })
     }
     inline fun <reified T : MainViewModel> initViewModel(): T =
-        ViewModelProviders.of(this, ViewModelFactory(
-            application as GalleryApp,
-            commonViewModel,
-            commonViewModel)).get(T::class.java)
+        ViewModelProviders.of(this, ViewModelFactory(application as GalleryApp, commonViewModel, commonViewModel)).get(T::class.java)
 
     fun goToLogin() {
         startActivity(Intent(this, LoginActivity::class.java))
@@ -34,6 +32,6 @@ abstract class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val TAG = "BaseActivity"
+        const val TAG = "MainActivity"
     }
 }

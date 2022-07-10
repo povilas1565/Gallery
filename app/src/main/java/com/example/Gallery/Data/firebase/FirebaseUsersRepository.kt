@@ -84,7 +84,7 @@ class FirebaseUsersRepository : UsersRepository {
         val updatesMap = mutableMapOf<String, Any?>()
         if (newUser.name != currentUser.name) updatesMap["name"] = newUser.name
         if (newUser.username != currentUser.username) updatesMap["username"] = newUser.username
-        if (newUser.website != currentUser.website) updatesMap["website"] = newUser.website
+        if (newUser.country!= currentUser.country) updatesMap["country"] = newUser.country
         if (newUser.bio != currentUser.bio) updatesMap["bio"] = newUser.bio
         if (newUser.email != currentUser.email) updatesMap["email"] = newUser.email
         if (newUser.phone != currentUser.phone) updatesMap["phone"] = newUser.phone

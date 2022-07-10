@@ -1,4 +1,4 @@
-package com.example.Gallery.Screens.AddFriends
+package com.example.Gallery.Screens.AddUsers
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -10,26 +10,26 @@ import com.example.Gallery.Screens.Common.setupAuthGuard
 import kotlinx.android.synthetic.main.activity_add_users.*
 
 
-class AddFriendsActivity :  MainActivity(), FriendsAdapter.Listener {
+class AddUsersActivity :  MainActivity(), UsersAdapter.Listener {
     private lateinit var mUser: User
-    private lateinit var mAdapter: FriendsAdapter
-    private lateinit var mViewModel: AddFriendsViewModel
+    private lateinit var mAdapter: UsersAdapter
+    private lateinit var mViewModel: AddUsersViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_users)
 
-        mAdapter = FriendsAdapter(this)
+        mAdapter = UsersAdapter(this)
 
         setupAuthGuard {
             mViewModel = initViewModel()
 
             back_image.setOnClickListener { finish() }
 
-            add_friends_recycler.adapter = mAdapter
-            add_friends_recycler.layoutManager = LinearLayoutManager(this)
+            add_users_recycler.adapter = mAdapter
+            add_users_recycler.layoutManager = LinearLayoutManager(this)
 
-            mViewModel.userAndFriends.observe(this, Observer {
+            mViewModel.userAndUsers.observe(this, Observer {
                 it?.let { (user, otherUsers) ->
                     mUser = user
                     mAdapter.update(otherUsers, mUser.follows)

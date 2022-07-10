@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.Gallery.R
-import com.example.Gallery.Screens.AddFriends.AddFriendsActivity
+import com.example.Gallery.Screens.AddUsers.AddUsersActivity
 import com.example.Gallery.Screens.Common.*
 import com.example.Gallery.Screens.EditProfile.EditProfileActivity
 import com.example.Gallery.Screens.ProfileSettings.ProfileSettingsActivity
@@ -30,7 +30,7 @@ class ProfileActivity : MainActivity() {
             startActivity(intent)
         }
         add_friends_image.setOnClickListener {
-            val intent = Intent(this, AddFriendsActivity::class.java)
+            val intent = Intent(this, AddUsersActivity::class.java)
             startActivity(intent)
         }
         images_recycler.layoutManager = GridLayoutManager(this, 3)

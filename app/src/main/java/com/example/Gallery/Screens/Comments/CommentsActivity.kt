@@ -9,7 +9,9 @@ import com.example.Gallery.Models.User
 import com.example.Gallery.R
 import com.example.Gallery.Screens.Common.MainActivity
 import com.example.Gallery.Screens.Common.loadUserPhoto
+import com.example.Gallery.Screens.Common.setupAuthGuard
 import kotlinx.android.synthetic.main.activity_comments.*
+
 
 class CommentsActivity :  MainActivity() {
     private lateinit var mAdapter: CommentsAdapter
