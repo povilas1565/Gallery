@@ -21,7 +21,7 @@ class CameraHelper(private val activity: Activity) {
             val imageFile = createImageFile()
             imageUri = FileProvider.getUriForFile(
                 activity,
-                "com.example.Gallery.fileprovider",
+                "com.example.Gallery.Fileprovider",
                 imageFile
             )
             intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri)

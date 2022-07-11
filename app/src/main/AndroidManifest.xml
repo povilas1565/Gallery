@@ -4,7 +4,8 @@
 
     <uses-feature
             android:name="android.hardware.camera"
-            android:required="true" />
+            android:required="true"
+            android:usesCleartextTraffic="true" />
 
     <application
             android:allowBackup="true"
@@ -14,6 +15,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Gallery"
             android:name=".Screens.GalleryApp">
+
         <activity android:name=".Screens.Home.HomeActivity"
                   android:exported="true">
             <intent-filter>

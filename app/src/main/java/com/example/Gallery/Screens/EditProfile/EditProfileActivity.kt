@@ -27,7 +27,6 @@ class EditProfileActivity : MainActivity(), PasswordDialog.Listener {
 
         setupAuthGuard {
             mViewModel = initViewModel()
-
             mViewModel.user.observe(this, Observer {
                 it?.let {
                     mUser = it
