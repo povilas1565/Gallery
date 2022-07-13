@@ -1,3 +1,5 @@
+@file:Suppress("PropertyName")
+
 package com.example.Gallery.screens.common
 
 import android.annotation.SuppressLint
@@ -21,11 +23,7 @@ class CameraHelper(private val activity: Activity) {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         if (intent.resolveActivity(activity.packageManager) != null) {
             val imageFile = createImageFile()
-            imageUri = FileProvider.getUriForFile(
-                activity,
-                "com.example.Gallery.Fileprovider",
-                imageFile
-            )
+            imageUri = FileProvider.getUriForFile(activity, "com.example.Gallery.Fileprovider", imageFile)
             intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri)
             activity.startActivityForResult(intent, REQUEST_CODE)
         }
@@ -33,11 +31,7 @@ class CameraHelper(private val activity: Activity) {
 
     private fun createImageFile(): File {
         val storageDir = activity.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(
-            "JPEG_${simpleDateFormat.format(Date())}_",
-            ".jpg",
-            storageDir
-        )
+        return File.createTempFile("JPEG_${simpleDateFormat.format(Date())}_", ".jpg", storageDir)
     }
 }
 
