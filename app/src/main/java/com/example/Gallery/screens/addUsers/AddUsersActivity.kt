@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor")
+
 package com.example.Gallery.screens.addUsers
 
 import android.os.Bundle

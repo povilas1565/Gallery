@@ -1,3 +1,5 @@
+@file:Suppress("unused", "MemberVisibilityCanBePrivate")
+
 package com.example.Gallery.data.firebase.common
 
 import android.app.Activity

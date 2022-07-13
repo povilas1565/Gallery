@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor")
+
 package com.example.Gallery.screens.home
 
 import android.os.Bundle
@@ -9,7 +11,6 @@ import com.example.Gallery.screens.comments.CommentsActivity
 import com.example.Gallery.screens.common.MainActivity
 import com.example.Gallery.screens.common.setupAuthGuard
 import com.example.Gallery.screens.common.setupBottomNavigation
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
 

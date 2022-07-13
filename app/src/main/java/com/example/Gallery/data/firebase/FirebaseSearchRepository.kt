@@ -1,5 +1,8 @@
+@file:Suppress("DEPRECATION", "NestedLambdaShadowedImplicitParameter")
+
 package com.example.Gallery.data.firebase
 
+import android.annotation.SuppressLint
 import androidx.lifecycle.LiveData
 import com.example.Gallery.common.toUnit
 import com.example.Gallery.models.SearchPost
@@ -11,10 +14,12 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.database.DataSnapshot
 
 class FirebaseSearchRepository: SearchRepository {
+    @SuppressLint("DefaultLocale")
     override fun createPost(post: SearchPost): Task<Unit> =
         database.child("search-posts").push()
             .setValue(post.copy(caption = post.caption.toLowerCase())).toUnit()
 
+    @SuppressLint("DefaultLocale")
     override fun searchPosts(text: String): LiveData<List<SearchPost>> {
         val reference = database.child("search-posts")
         val query = if (text.isEmpty()) {

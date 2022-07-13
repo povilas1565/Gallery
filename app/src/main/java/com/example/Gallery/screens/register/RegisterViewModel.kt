@@ -1,5 +1,8 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.Gallery.screens.register
 
+import android.annotation.SuppressLint
 import android.app.Application
 import android.util.Log
 import com.example.Gallery.common.SingleLiveEvent
@@ -60,6 +63,7 @@ class RegisterViewModel(private val commonViewModel: CommonViewModel,
         return User(name = fullName, username = username, email = email)
     }
 
+    @SuppressLint("DefaultLocale")
     private fun mkUsername(fullName: String) =
         fullName.toLowerCase().replace(" ", ".")
 }

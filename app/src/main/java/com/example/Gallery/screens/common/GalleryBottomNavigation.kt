@@ -1,5 +1,8 @@
+@file:Suppress("DEPRECATION", "unused", "RedundantSamConstructor")
+
 package com.example.Gallery.screens.common
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.util.Log
 import android.view.View
@@ -40,6 +43,7 @@ class GalleryBottomNavigation(
         private lateinit var mNotificationsContentView: View
         private var lastTooltipView: ToolTipView? = null
 
+        @SuppressLint("InflateParams")
         @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
         fun onCreate() {
             mViewModel = activity.initViewModel()

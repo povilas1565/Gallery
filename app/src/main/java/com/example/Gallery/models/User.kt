@@ -1,3 +1,5 @@
+@file:Suppress("RemoveEmptyClassBody")
+
 package com.example.Gallery.models
 
 import com.google.firebase.database.Exclude

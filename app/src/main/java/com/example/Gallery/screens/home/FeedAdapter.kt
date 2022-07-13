@@ -1,3 +1,5 @@
+@file:Suppress("SuspiciousCollectionReassignment")
+
 package com.example.Gallery.screens.home
 
 import android.view.LayoutInflater

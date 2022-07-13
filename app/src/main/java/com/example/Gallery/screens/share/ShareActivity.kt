@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION", "RedundantSamConstructor")
+
 package com.example.Gallery.screens.share
 
 import android.content.Intent

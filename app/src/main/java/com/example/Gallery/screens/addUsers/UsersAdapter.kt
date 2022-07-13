@@ -1,3 +1,5 @@
+@file:Suppress("SuspiciousCollectionReassignment", "SimplifiableCallChain")
+
 package com.example.Gallery.screens.addUsers
 
 import android.view.LayoutInflater

@@ -1,3 +1,5 @@
+@file:Suppress("NestedLambdaShadowedImplicitParameter")
+
 package com.example.Gallery.data.firebase
 
 import android.net.Uri

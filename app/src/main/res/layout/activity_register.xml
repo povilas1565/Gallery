@@ -3,14 +3,15 @@
                                                             xmlns:tools="http://schemas.android.com/tools"
                                                             android:id="@+id/scroll_view"
                                                             android:layout_width="match_parent"
-                                                            android:layout_height="match_parent">
+                                                            android:layout_height="match_parent"
+                                                            tools:ignore="SpeakableTextPresentCheck">
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
                  xmlns:tools="http://schemas.android.com/tools"
                  android:id="@+id/frame_layout"
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 tools:context=".screens.register.RegisterActivity">
+                 tools:context=".screens.register.RegisterActivity" tools:ignore="RedundantNamespace">
     </FrameLayout>
 
 </com.example.Gallery.screens.common.KeyboardAwareScrollView>

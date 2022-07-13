@@ -1,3 +1,5 @@
+@file:Suppress("ReplaceIsEmptyWithIfEmpty")
+
 package com.example.Gallery.screens.common
 
 import android.app.Activity

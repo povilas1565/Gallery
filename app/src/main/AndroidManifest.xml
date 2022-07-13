@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration, AndroidUnknownAttribute -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools" package="com.example.Gallery">
 
+    <!--suppress AndroidUnknownAttribute -->
     <uses-feature
             android:name="android.hardware.camera"
             android:required="true"
             android:usesCleartextTraffic="true" />
 
+    <!--suppress AndroidUnknownAttribute -->
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -14,7 +17,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Gallery"
-            android:name=".screens.GalleryApp">
+            android:name=".screens.GalleryApp"
+            android:fullBackupContent="true">
 
         <activity android:name=".screens.home.HomeActivity"
                   android:exported="true">
@@ -29,6 +33,7 @@
         <activity android:name=".screens.notifications.NotificationsActivity" />
         <activity android:name=".screens.profile.ProfileActivity" />
         <activity android:name=".screens.editProfile.EditProfileActivity" />
+        <!--suppress AndroidUnknownAttribute -->
         <activity
                 android:name=".screens.login.LoginActivity"
                 android:windowSoftInputMode="stateVisible|adjustResize" />

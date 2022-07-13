@@ -1,5 +1,6 @@
 package com.example.Gallery.screens.common
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -15,6 +16,7 @@ class CameraHelper(private val activity: Activity) {
     val REQUEST_CODE = 1
     private val simpleDateFormat = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
 
+    @SuppressLint("QueryPermissionsNeeded")
     fun takeCameraPicture() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         if (intent.resolveActivity(activity.packageManager) != null) {

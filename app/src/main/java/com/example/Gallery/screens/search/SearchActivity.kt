@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION", "RedundantSamConstructor")
+
 package com.example.Gallery.screens.search
 
 import android.os.Bundle
@@ -32,8 +34,8 @@ private lateinit var mAdapter: ImagesAdapter
             search_results_recycler.adapter = mAdapter
 
             mViewModel = initViewModel()
-            mViewModel.posts.observe(this, Observer{it?.let{posts ->
-                mAdapter.updateImages(posts.map { it.image })
+            mViewModel.posts.observe(this, Observer {it?.let{ posts ->
+                mAdapter.updateImages(posts.map {it.image })
             }})
 
             search_input.addTextChangedListener(this)

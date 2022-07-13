@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor", "PARAMETER_NAME_CHANGED_ON_OVERRIDE")
+
 package com.example.Gallery.screens.login
 
 import android.content.Intent
@@ -8,7 +10,6 @@ import androidx.lifecycle.Observer
 import com.example.Gallery.R
 import com.example.Gallery.screens.common.MainActivity
 import com.example.Gallery.screens.common.coordinateBtnAndInputs
-import com.example.Gallery.screens.common.setupBottomNavigation
 import com.example.Gallery.screens.home.HomeActivity
 import com.example.Gallery.screens.register.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth

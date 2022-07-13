@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    xmlns:tools="http://schemas.android.com/tools"
@@ -80,7 +81,8 @@
             android:text="@string/posts"
             app:layout_constraintEnd_toStartOf="@id/followers_text"
             app:layout_constraintStart_toStartOf="@id/edit_profile_btn"
-            app:layout_constraintTop_toBottomOf="@id/posts_count_text"/>
+            app:layout_constraintTop_toBottomOf="@id/posts_count_text" />
+
     <TextView
             android:id="@+id/followers_count_text"
             style="@style/profile_text_count"
@@ -119,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
             android:background="@drawable/button_bg"
-            android:minHeight="0dp"
+            android:minHeight="48dp"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
             android:layout_marginBottom="5dp"
@@ -129,7 +131,7 @@
             app:layout_constraintBottom_toBottomOf="@id/profile_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="5"
-            app:layout_constraintStart_toEndOf="@id/profile_image" />
+            app:layout_constraintStart_toEndOf="@id/profile_image"/>
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/images_recycler"

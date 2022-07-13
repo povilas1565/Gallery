@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor")
+
 package com.example.Gallery.screens.comments
 
 import android.content.Context

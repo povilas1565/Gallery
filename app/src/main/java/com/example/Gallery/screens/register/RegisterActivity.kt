@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor")
+
 package com.example.Gallery.screens.register
 
 import android.content.Intent

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION", "unused")
+
 package com.example.Gallery.screens.common
 
 import androidx.lifecycle.Lifecycle

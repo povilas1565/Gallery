@@ -1,3 +1,5 @@
+@file:Suppress("NestedLambdaShadowedImplicitParameter", "SimplifiableCallChain")
+
 package com.example.Gallery.data.firebase
 
 import androidx.lifecycle.LiveData

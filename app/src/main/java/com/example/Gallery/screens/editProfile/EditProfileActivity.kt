@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor", "DEPRECATION")
+
 package com.example.Gallery.screens.editProfile
 
 import android.content.Intent

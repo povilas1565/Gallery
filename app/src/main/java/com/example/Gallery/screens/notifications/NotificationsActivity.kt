@@ -1,3 +1,5 @@
+@file:Suppress("RedundantSamConstructor")
+
 package com.example.Gallery.screens.notifications
 
 import android.os.Bundle

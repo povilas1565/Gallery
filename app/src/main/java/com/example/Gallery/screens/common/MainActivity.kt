@@ -1,5 +1,8 @@
+@file:Suppress("DEPRECATION", "RedundantSamConstructor")
+
 package com.example.Gallery.screens.common
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -13,6 +16,7 @@ import com.example.Gallery.screens.login.LoginActivity
 abstract class MainActivity : AppCompatActivity() {
     lateinit var commonViewModel: CommonViewModel
 
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT

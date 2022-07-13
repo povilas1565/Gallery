@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.example.Gallery.screens.common
 
 import com.bumptech.glide.annotation.GlideModule

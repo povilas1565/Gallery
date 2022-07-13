@@ -1,3 +1,5 @@
+@file:Suppress("RemoveEmptyClassBody")
+
 package com.example.Gallery.data
 import androidx.lifecycle.LiveData
 import com.example.Gallery.models.Comment
