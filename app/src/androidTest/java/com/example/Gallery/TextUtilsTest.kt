@@ -1,7 +1,7 @@
 package com.example.Gallery
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.Gallery.Common.formatRelativeTimestamp
+import com.example.Gallery.common.formatRelativeTimestamp
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.util.*

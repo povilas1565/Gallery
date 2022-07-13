@@ -5,7 +5,7 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
                                                    android:background="@color/white"
-                                                   tools:context=".Screens.Home.HomeActivity">
+                                                   tools:context=".screens.home.HomeActivity">
 
     <androidx.appcompat.widget.Toolbar
             app:layout_constraintTop_toTopOf="parent"
@@ -80,8 +80,7 @@
             android:text="@string/posts"
             app:layout_constraintEnd_toStartOf="@id/followers_text"
             app:layout_constraintStart_toStartOf="@id/edit_profile_btn"
-            app:layout_constraintTop_toBottomOf="@id/posts_count_text" />
-
+            app:layout_constraintTop_toBottomOf="@id/posts_count_text"/>
     <TextView
             android:id="@+id/followers_count_text"
             style="@style/profile_text_count"
