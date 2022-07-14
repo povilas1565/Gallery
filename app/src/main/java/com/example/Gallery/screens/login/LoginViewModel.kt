@@ -1,13 +1,15 @@
+
 package com.example.Gallery.screens.login
 
 import android.app.Application
 import androidx.lifecycle.LiveData
+import com.example.Gallery.R
 import com.example.Gallery.common.AuthManager
 import com.example.Gallery.common.SingleLiveEvent
-import com.example.Gallery.R
 import com.example.Gallery.screens.common.CommonViewModel
 import com.example.Gallery.screens.common.MainViewModel
 import com.google.android.gms.tasks.OnFailureListener
+
 
 class LoginViewModel(private val authManager: AuthManager,
                      private val app: Application,
@@ -35,3 +37,10 @@ class LoginViewModel(private val authManager: AuthManager,
         _goToRegisterScreen.call()
     }
 }
+
+
+
+
+
+
+

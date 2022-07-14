@@ -1,4 +1,6 @@
+
 package com.example.Gallery.common.firebase
+
 
 
 import com.example.Gallery.common.AuthManager
@@ -11,9 +13,34 @@ class FirebaseAuthManager : AuthManager {
         auth.signOut()
     }
 
-    override fun signIn(email: String, password: String): Task<Unit> =
-        auth.signInWithEmailAndPassword(email, password).toUnit()
+override fun signIn(email: String, password: String): Task<Unit> =
+    auth.signInWithEmailAndPassword(email, password).toUnit()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

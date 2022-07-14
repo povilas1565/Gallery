@@ -1,5 +1,4 @@
 @file:Suppress("DEPRECATION")
-
 package com.example.Gallery.screens.register
 
 import android.annotation.SuppressLint
